@@ -1,0 +1,73 @@
+:root {
+  --background_main: #1a2036;
+  --background_group: #252b42;
+  --background_groupElem: #1a2036;
+  --textColor: #b1b9d8;
+}
+
+body {
+  background: var(--background_main);
+}
+
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.section1 {
+  background: var(--background_group);
+  width: 60rem;
+  height: 40rem;
+  border-radius: 25px;
+}
+.article {
+  display: block;
+  padding: 2rem 6.5rem;
+}
+.heading {
+  color: var(--textColor);
+  margin-bottom: 2.75rem;
+  font-size: 2rem;
+}
+.container {
+  height: 27rem;
+}
+.listItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.8rem;
+  padding-left: 0;
+}
+.listItem {
+  background: var(--background_groupElem);
+  list-style: none;
+  width: 11rem;
+  height: 13rem;
+  border-radius: 15px;
+  color: var(--textColor);
+}
+.listItem:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.image {
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  margin: 2rem auto 1rem auto;
+}
+.title {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.counters {
+  text-align: center;
+  margin: 0rem auto 1rem auto;
+}
